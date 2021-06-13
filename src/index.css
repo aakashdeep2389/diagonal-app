@@ -1,13 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Titillium Web", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  background: #eee;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.app-wrapper {
+  background: #000;
+}
+main.body-container {
+  padding: 36px 15px;
+  margin-top: 130px;
+  position: relative;
+}
+.cm_card {
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px;
+  width: 33.333%;
+  margin-bottom: 90px;
+}
+
+.listing-wrapper {
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.cm_card .imgwrapper {
+  margin-bottom: 24px;
+}
+.content {
+  font-size: 36pt;
+  font-weight: 300;
+}
+.cm_card .imgwrapper img {
+  width: 100%;
+}
+.header-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+.header-search-wrapper {
+  padding: 26px 30px;
+  background-image: url("./assets/img/nav_bar.png");
+  padding-bottom: 55px;
+}
+.header-search-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search_bar.inline {
+  flex-grow: 1;
+}
+
+img.search_icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  max-width: 40px;
+  transform: translate(0, -50%);
+}
+
+.search_bar.inline input.form-control {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  opacity: 1;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 40pt;
+  font-weight: 300;
+  padding: 0 10px;
+}
+.search_bar.inline input.form-control::placeholder {
+  opacity: 1;
+  color: #fff;
+}
+img.backbtn {
+  max-width: 30px;
+  margin-right: 15px;
+}
+input:-internal-autofill-selected,
+input:-webkit-autofill,
+.form-control:focus {
+  background: transparent !important;
+  color: #fff !important;
+}
+main.body-container:before {
+  content: "";
+  position: absolute;
+  top: -165px;
+  background: #000;
+  height: 165px;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+.c-pnt {
+  cursor: pointer;
 }
