@@ -12,6 +12,9 @@ const initialState = {
 const listingReducer = (state = initialState, action) => {
   switch (action.type) {
     case list.SAVE_CONTENT_LIST:
+      action.payload["content-items"].content = state[
+        "content-items"
+      ].content.concat(action.payload["content-items"].content);
       return {
         ...state,
         ...action.payload,

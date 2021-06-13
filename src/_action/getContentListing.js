@@ -1,5 +1,4 @@
 import { usersService } from "../services/apiService";
-import { ResponseFilter } from '../_helper/ResponseHandler';
 import promise from 'bluebird';
 
 export const list = {
@@ -7,12 +6,12 @@ export const list = {
 }
 
 //create asker post
-export function getContentListing() {
+export function getContentListing(params) {
     return function (dispatch) {
         return new promise(function (resolve, reject) {
             dispatch({
                 type: list.SAVE_CONTENT_LIST,
-                payload: usersService.getContentListing(),
+                payload: usersService.getContentListing(params),
             });
 
             // .then(response => {
