@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getContentListing } from '../../_action/getContentListing'
 import LazyLoad from 'react-lazyload';
-
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 const ContentListing = () => {
     let dispatch = useDispatch();
@@ -66,7 +66,7 @@ const ContentListing = () => {
         <main className="body-container">
             <div className="listing-wrapper">
                 <InfiniteScroll
-                    dataLength={this.state.items.length}
+                    dataLength={6}
                     next={fetchMoreData}
                     hasMore={true}
                     loader={<h4>Loading...</h4>}
