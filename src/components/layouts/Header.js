@@ -17,12 +17,11 @@ const Header = () => {
             <div className="container">
                 <div className="header-search-wrapper">
                     <form className="header-search-inner" autoComplete="off" >
-                        <img src="./assets/img/Back.png" className="backbtn c-pnt" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Back.png`} className="backbtn c-pnt" />
                         <div className="search_bar inline">
-                            <i className="fa fa-search" />
                             <input type="text" className="form-control" placeholder="Search by name" value={search} name="search" onChange={handlerOnChange} />
                         </div>
-                        <img src="./assets/img/search.png" className="search_icon c-pnt" />
+                        <img src={`${process.env.PUBLIC_URL}/images/search.png`} className="search_icon c-pnt" />
                     </form>
                 </div>
             </div>
