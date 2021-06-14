@@ -47,8 +47,10 @@ const ContentListing = () => {
                     {
                         listing.filter(item => {
                             if (searchval) {
-                                console.log(searchval, 'asdfdsasdffdsdf44343')
-                                return item.name == searchval
+                                console.log(searchval, 'asdfdsasdffdsdf44343');
+                                var regex = new RegExp(`${searchval}`, "i")
+
+                                return regex.test(item.name)
                             } else {
                                 return true
                             }
