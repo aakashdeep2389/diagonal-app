@@ -49,6 +49,7 @@ main.body-container {
   width: 100%;
   left: 0;
   z-index: 1;
+  padding: 0;
 }
 .header-search-wrapper {
   padding: 26px 30px;
@@ -111,7 +112,21 @@ main.body-container:before {
 .c-pnt {
   cursor: pointer;
 }
-
+.header-container .container {
+  padding: 0 !important;
+}
+.infinite-scroll-component {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.list-loader {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
 /* media  */
 @media (max-width: 768px) {
   .cm_card .content {

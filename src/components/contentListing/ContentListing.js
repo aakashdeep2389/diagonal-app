@@ -43,7 +43,7 @@ const ContentListing = () => {
                     dataLength={contentlisting["total-content-items"]}
                     next={fetchMoreData}
                     hasMore={contentlisting["page-num-requested"] * contentlisting["page-size-requested"] < contentlisting["total-content-items"]}
-                    loader={<h4 className="text-light">Loading...</h4>}>
+                    loader={<h4 className="text-light list-loader" >Loading...</h4>}>
                     {
                         listing.filter(item => {
                             if (searchval) {
