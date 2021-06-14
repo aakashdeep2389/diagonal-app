@@ -47,6 +47,7 @@ const ContentListing = () => {
                     {
                         listing.filter(item => {
                             if (searchval) {
+                                console.log(searchval, 'asdfdsasdffdsdf44343')
                                 return item.name == searchval
                             } else {
                                 return true
@@ -58,7 +59,7 @@ const ContentListing = () => {
                                     <img src={item["poster-image"]} />
                                 </div>
                                 <div className="content">
-                                    {item.name + ' ' + i}
+                                    {item.name}
                                 </div>
                             </div>
 

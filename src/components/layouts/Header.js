@@ -19,7 +19,7 @@ const Header = () => {
                     <form className="header-search-inner" autoComplete="off" >
                         <img src={`${process.env.PUBLIC_URL}/images/Back.png`} className="backbtn c-pnt" />
                         <div className="search_bar inline">
-                            <input type="text" className="form-control" placeholder="Search by name" value={search} name="search" onChange={handlerOnChange} />
+                            <input type="text" className="form-control" placeholder="search here..." value={search} name="search" onChange={handlerOnChange} />
                         </div>
                         <img src={`${process.env.PUBLIC_URL}/images/search.png`} className="search_icon c-pnt" />
                     </form>
