@@ -36,7 +36,7 @@ main.body-container {
 .cm_card .imgwrapper {
   margin-bottom: 24px;
 }
-.content {
+.cm_card .content {
   font-size: 36pt;
   font-weight: 300;
 }
@@ -110,4 +110,21 @@ main.body-container:before {
 }
 .c-pnt {
   cursor: pointer;
+}
+
+/* media  */
+@media (max-width: 768px) {
+  .cm_card .content {
+    font-size: 16pt;
+  }
+  .search_bar.inline input.form-control {
+    font-size: 20pt;
+  }
+  img.search_icon {
+    max-width: 25px;
+  }
+  img.backbtn {
+    max-width: 20px;
+    margin-right: 10px;
+  }
 }
