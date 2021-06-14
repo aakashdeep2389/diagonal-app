@@ -127,4 +127,8 @@ main.body-container:before {
     max-width: 20px;
     margin-right: 10px;
   }
+  .header-search-wrapper {
+    background-position: center -30px;
+    background-repeat: no-repeat;
+  }
 }
